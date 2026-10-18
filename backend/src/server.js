@@ -15,7 +15,7 @@ app.post("/api/tasks", (req, res) => {
 });
 
 app.put("/api/tasks/:id", (req, res) => {
-  res.json("Task dwucoj update thành công");
+  res.json("Task được update thành công");
 });
 
 app.delete("/api/tasks/:id", (req, res) => {
