@@ -1,6 +1,9 @@
 // import express from "express";
 // import taskRoute from "./routes/tasksRouters.js";
 // import { connectDB } from "./config/db.js";
+// import dotenv from "dotenv";
+
+// dotenv.config();
 
 // const app = express();
 
@@ -19,7 +22,7 @@ import taskRoute from "./routes/tasksRouters.js";
 import { connectDB } from "./config/db.js";
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 // Sử dụng DNS Google để truy vấn MongoDB Atlas
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
