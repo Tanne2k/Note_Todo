@@ -4,13 +4,10 @@
 // import dotenv from "dotenv";
 
 // dotenv.config();
-
 // const app = express();
-
 // connectDB();
-
+// app.use(express.json());
 // app.use("/api/tasks", taskRoute);
-
 // app.listen(5001, () => {
 //   console.log("server chạy thành công trên cổng 5001...");
 // });

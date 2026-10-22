@@ -1,8 +1,9 @@
-import Task from "../models/Task";
+import Task from "../models/Task.js";
 
 export const getAllTasks = async (req, res) => {
   try {
     const tasks = await Task.find();
+    // throw new Error("lỗi");
     res.status(200).json(tasks);
   } catch (error) {
     console.error("Lỗi khi gọi getAllTasks", error);
@@ -10,8 +11,17 @@ export const getAllTasks = async (req, res) => {
   }
 };
 
-export const createTask = (req, res) => {
-  res.status(201).json({ message: "Thêm task mới thành công" });
+export const createTask = async (req, res) => {
+  try {
+    const { title } = req.body;
+    const task = new Task({ title });
+
+    const newTask = await task.save();
+    return res.status(201).json(newTask);
+  } catch (error) {
+    console.error("Lỗi khi gọi createTask", error);
+    return res.status(500).json({ message: "Lỗi hệ thống" });
+  }
 };
 
 export const updateTask = (req, res) => {
