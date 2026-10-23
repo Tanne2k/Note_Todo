@@ -20,7 +20,7 @@ const taskSchema = new mongoose.Schema(
     },
   },
   {
-    timeStamps: true, // createdAt vaf updatedAt tự động thêm vào
+    timestamps: true, // createdAt và updatedAt tự động thêm vào
   },
 );
 
