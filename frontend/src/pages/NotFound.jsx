@@ -10,7 +10,7 @@ const NotFound = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center bg-slate-50">
       <img
-        src="/404 Not Found.png"
+        src="404_NotFound.png"
         alt="404 Not Found"
         className="object-contain w-auto h-64"
       />
@@ -18,7 +18,7 @@ const NotFound = () => {
       <h1 className="mt-6 text-4xl font-bold text-slate-800">404 Not Found</h1>
 
       <p className="mt-3 text-xl font-semibold text-slate-600">
-        Bạn đang đi vào vùng cần địa!
+        Bạn đang đi vào vùng cấm địa!
       </p>
 
       <a

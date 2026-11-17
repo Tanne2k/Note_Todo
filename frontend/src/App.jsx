@@ -6,7 +6,7 @@
 
 // import { Toaster, toast } from "sonner";
 import { BrowserRouter, Routes, Route } from "react-router";
-import HomePage from "./pages/HomePage";
+import HomePage from "./components/HomePage";
 import NotFound from "./pages/NotFound";
 
 function App() {
